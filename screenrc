@@ -1,0 +1,16 @@
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %c:%s "
+startup_message off
+vbell off
+bind ' ' title
+
+screen -t admin 0
+screen -t dev1 1
+screen -t dev2 2
+screen -t dev3 3
+#screen -t dev4 4
+#screen -t dev5 5
+#screen -t dev6 6
+select 0
+
+
