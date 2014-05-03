@@ -1,0 +1,63 @@
+
+term xterm-256color
+
+attrcolor b ".I"
+
+termcapinfo xterm-256color 'Co#256:AB=/E[48;5;%dm:AF=/E[38;5;%dm'
+
+defbce "on"
+
+multiuser on
+
+# set encoding
+encoding GBK UTF-8
+
+# Do not show startup message
+#	Default: On
+startup_message off 
+
+# Use visual bell
+vbell off
+
+# Auto detach when the connection is disconnect
+autodetach on
+
+# Make the shell in every window a login shell
+# load ~/.bash_profile
+shell -$SHELL
+#shell -/bin/zsh
+
+# Set 5000 line history
+defscrollback 5000
+
+# Remove some setpid / dangerous key bindings
+bind k
+bind ^k
+bind .
+bind ^/
+bind //
+bind ^h
+bind h
+# Make them better
+bind 'K' kill
+bind 'I' login on
+bind 'O' login off
+bind '}' history 
+
+# Auto create tab page
+screen -t admin 0
+screen -t console 1
+screen -t dev1 2
+screen -t dev2 3
+screen -t dev3 4
+screen -t dev4 5
+select 0
+
+caption always "%{= wk} %{= KY} [%n]%t @ %H %{-} %= %{-} %{= KG} ${USER} %{-} @v@ %{-} | %{= KG} %Y-%m-%d %c:%s %{-} "
+hardstatus alwayslastline " %-LW%{= Bw}%n %t%{-}%+LW %=| Stupid is a stupid does."
+
+
+
+
+
+
