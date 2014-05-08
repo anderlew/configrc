@@ -1,42 +1,46 @@
 
-################################
-##: Alias
+BASE_BASH_DIR="/home/MyEnv/1.Config/configrc/bash"
 
-alias ls='ls --color=auto'
+function source_file()
+{
+    file=$1
+    if [ ! -f $file ]; then
+        return
+    fi
 
-##: ~ (Alias)
+    . $file 
+}
+
+function source_path()
+{
+    path=$1
+    if [ ! -e $path ]; then
+        return
+    fi
+
+    for file in `ls $path/*.bashrc`; do
+        . $file
+    done
+}
 
 ################################
 ##: Bash prompt 
 
-if [ -f ~/Config/bash_ps ]; then
-    . ~/Config/bash_ps
-fi
+source_file "${BASE_BASH_DIR}/ps.bashrc"
 
 ##: ~ (Bash prompt)
 
+################################
+##: Alias
+
+source_file "${BASE_BASH_DIR}/alias.bashrc"
+
+##: ~ (Alias)
 
 ################################
-##: Set Android environment 
+##: Set Paths 
 
-AND_NDK_HOME=/opt/android/ndk/android-ndk-r7b
-AND_SDK_HOME=/opt/android/sdk/android-sdk-r22
+source_path "${BASE_BASH_DIR}/path"
 
-##: ~ (Android)
-
-
-################################
-##: Set Java environment 
-
-export JAVA_HOME=/opt/jdk1.7.0_51
-
-##: ~ (Java)
-
-################################
-##: Set hadoop environment 
-
-export HADOOP_HOME=/opt/hadoop-2.2.0/
-export HADOOP_VERSION="2.2.0"
-
-##: ~ (Hadoop)
+##: ~ (Paths)
 
