@@ -1,5 +1,5 @@
 
-BASE_BASH_DIR="/home/MyEnv/1.Config/configrc/bash"
+BASE_BASH_DIR="~/.my_config/bash"
 
 function source_file()
 {

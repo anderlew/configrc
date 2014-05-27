@@ -1,13 +1,12 @@
 #1/bin/bash
 
-BASH_RC="bashrc"
+BASH_RC="bash/bashrc"
 GIT_RC=""
-BASH_RC=""
 VIM_RC=""
 SCREEN_RC=""
 
 ## 1. Make a link folder to $HOME/Config.
-CONFIG_PATH=$HOME/Config
+CONFIG_PATH="$HOME/.my_config"
 if [ ! -e $CONFIG_PATH ]; then
     ln -s `pwd` $CONFIG_PATH 
 fi
