@@ -1,5 +1,5 @@
 
-BASE_BASH_DIR="$HOME/.my_configrc/bash"
+BASE_BASH_DIR="$HOME/.my_config/bash"
 
 function source_file()
 {
