@@ -44,3 +44,12 @@ source_path "${BASE_BASH_DIR}/path"
 
 ##: ~ (Paths)
 
+################################
+##: Setup tools
+
+TOOLS_DIR="$HOME/.my_tool/"
+
+source_path "${TOOLS_DIR}/path"
+
+##: ~ (Paths)
+

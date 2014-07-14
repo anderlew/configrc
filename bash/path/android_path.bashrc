@@ -2,7 +2,8 @@
 ##: Set Android SDK environment 
 
 ANDROID_ROOT="/opt/android"
-ANDROID_SDK_ROOT="$ANDROID_ROOT/android-sdk/sdk"
+ANDROID_SDK_ROOT="$ANDROID_ROOT/android-sdk"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools"
 
 ##: ~
 ################################
