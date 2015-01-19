@@ -16,6 +16,11 @@
 	l = log --color --graph --decorate
     st = status
     co = checkout
-    br = branch -a
+    br = branch
     re = remote -v
-
+    dh = difftool -y HEAD
+    ba = branch -a
+    sh = show --name-status
+    ds = diff HEAD --name-status
+[merge]
+	tool = bc3

@@ -10,7 +10,11 @@ AND_SDK_HOME=/opt/android/sdk/android-sdk-r22
 ################################
 ##: Set Java environment 
 
-export JAVA_HOME=/opt/jdk1.7.0_51
+JDK6_HOME=/opt/jdk1.6.0_45
+JDK7_HOME=/opt/jdk1.7.0_71
+
+#export JAVA_HOME=$JDK7_HOME
+#export PATH=$PATH:$JAVA_HOME/bin
 
 ##: ~ (Java)
 
