@@ -1,5 +1,5 @@
 
-BASE_BASH_DIR="$HOME/.my_config/bash"
+BASE_BASH_DIR="$HOME/.my_configrc/bash"
 
 function source_file()
 {
@@ -52,4 +52,3 @@ TOOLS_DIR="$HOME/.my_tool/"
 source_path "${TOOLS_DIR}/path"
 
 ##: ~ (Paths)
-

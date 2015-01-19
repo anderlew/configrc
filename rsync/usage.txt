@@ -1,0 +1,25 @@
+
+## Start services
+rsync --daemon
+
+
+## /etc/rsync.pwd
+peanuts
+
+
+#################
+### Usage
+
+-u, --update: skip files that are newer on the receiver
+-a, --archive: archive mode;
+--delete: delete extraneous files from dest dirs
+
+## Start upload 
+rsync -aSvH /home/bing/.my_configrc/ bing@localhost:store
+rsync -aSvH /home/bing/.my_configrc/ --password-file=/etc/rsync.pwd bing@localhost:store
+
+## Start download
+rsync -vzrtopgu --progress ant@10.0.19.45::store .
+rsync -aSvHu ant@10.0.19.45:store .
+
+

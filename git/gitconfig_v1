@@ -1,0 +1,24 @@
+[color]
+    ui = true
+    diff = auto
+    status = true
+    branch = auto
+    interactive = auto
+    log = true
+[alias]
+    logtree = log --graph --decorate
+    co = checkout
+    ci = commit
+    st = status
+    pl = pull
+    ps = push
+    df = difftool
+    l = log --stat
+[core]
+    editor = vim
+[diff]
+    tool = vimdiff
+[merge]
+    summary = true
+    tool = vimdiff
+

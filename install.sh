@@ -6,7 +6,7 @@ VIM_RC=""
 SCREEN_RC=""
 
 ## 1. Make a link folder to $HOME/Config.
-CONFIG_PATH="$HOME/.my_config"
+CONFIG_PATH="$HOME/.my_configrc"
 if [ ! -e $CONFIG_PATH ]; then
     ln -s `pwd` $CONFIG_PATH 
 fi

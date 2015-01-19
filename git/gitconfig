@@ -1,24 +1,24 @@
+[user]
+	email = anderlew@gmail.com
+	name = anderlew
 [color]
-    ui = true
-    diff = auto
-    status = true
-    branch = auto
-    interactive = auto
-    log = true
-[alias]
-    logtree = log --graph --decorate
-    co = checkout
-    ci = commit
-    st = status
-    pl = pull
-    ps = push
-    df = difftool
-    l = log --stat
+	ui = auto
 [core]
-    editor = vim
+	editor = vim
 [diff]
-    tool = vimdiff
+	#tool = vimdiff
+	#merge = vimdiff
+	tool = bc3
+	merge = bc3
+[alias]
+	l = log --color --graph --decorate
+	st = status
+	co = checkout
+	br = branch
+	re = remote -v
+	dh = difftool -y HEAD
+	ba = branch -a
+	sh = show --name-status
+	ds = diff HEAD --name-status
 [merge]
-    summary = true
-    tool = vimdiff
-
+	tool = bc3
