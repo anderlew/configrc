@@ -6,7 +6,7 @@
 [core]
     editor = vim
 [commit]
-	template = /home/bing/Myfiles/1.WorkSources/1.Lewa/lewa.gitcommit
+	template = /home/bing/MyFiles/1.WorkSources/1.Lewa/lewa.gitcommit
 [diff]
     #tool = vimdiff
 	#merge = vimdiff
