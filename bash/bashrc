@@ -47,7 +47,7 @@ source_path "${BASE_BASH_DIR}/path"
 ################################
 ##: Setup tools
 
-TOOLS_DIR="$HOME/.my_tool/"
+TOOLS_DIR="$HOME/.my_tools/"
 
 source_path "${TOOLS_DIR}/path"
 
